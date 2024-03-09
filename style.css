@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+        background-color: aliceblue;
+    }
+    to {
+        width: 100%;
+        background-color: rgb(49, 49, 49);
+    }
+}
+
+@keyframes font {
+    from {
+        color: transparent;
+    }
+    to {
+        color: black;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcomeFont {
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    margin: 30px;
+    animation: font 1s forwards;
+}
+
+.underline {
+    animation: underline 4s forwards;
+    height: 5px;
+    border-radius: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    position: relative;
+}
+
+.play {
+    margin-top: 5%;
+}
+
+.play, .aboutB, .quit {
+    width: 250px;
+    height: 75px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 30px;
+    font-size: 35px;
+    font-family: "Madimi One", sans-serif;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 2%;
+    border-radius: 50%;
+}
+
+.about {
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    left: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(103, 103, 103);
+}
+
+@media only screen and (max-width: 600px) {
+    .welcomeFont {
+        font-size: 28px;
+    }
+    .logo {
+        top: 3%;
+    }
+    .play {
+        margin-top: 30%;
+    }
+}

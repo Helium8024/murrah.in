@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your character</title>
+</head>
+<body>
+    <h1>Select your character</h1>
+    <div class="cards">
+        <img src="bird.png" alt="" class="card" onclick="location.href = 'game.html'">
+        <img src="bird2.png" alt="" class="card" onclick="location.href = 'game2.html'">
+    </div>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 5%;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .card {
+            width: 250px;
+            height: 300px;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+    </style>
+</body>
+</html>

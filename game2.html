@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Murrah Game</title>
+        <link rel="stylesheet" href="game.css">
+        <script src="function2.js"></script>
+    </head>
+    <body>
+        <canvas id="board"></canvas>
+        <button onclick="moveBird()" class="button">Jump</button> 
+    </body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    .button {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: none;
+        font-family: "Madimi One", sans-serif;
+        font-size: 30px;
+        background-color: rgba(91, 91, 91, 0.47);
+        transition: .4s;
+        border: 4px solid black;
+    }
+
+    .button:active {
+        background-color: white;
+    }
+
+    body {
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+    }
+
+    #board {
+    /* background-color: skyblue; */
+        background-image: url("./back.png");
+    }   
+    </style>
+</html>
